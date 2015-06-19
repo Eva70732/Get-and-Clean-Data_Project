@@ -15,18 +15,28 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ## Instructions
 
 According to the Coursera Project assignment we should create one R script called run_analysis.R that does the following:
-1. Merges the training and the test sets to create one data set:
+
+1.Merges the training and the test sets to create one data set:
+
 *   download and read datasets into R using read.table()
 *   merge data to the final common dataset using rbind() and cbind()
-2. Extracts only the measurements on the mean and standard deviation for each measurement: 
+
+2.Extracts only the measurements on the mean and standard deviation for each measurement: 
+
 *   find column numbers which contains "mean()" or "std()" using grep()
 *   subset final dataset with this column numbers
-3. Uses descriptive activity names to name the activities in the data set:
+
+3.Uses descriptive activity names to name the activities in the data set:
+
 *   using sapply() and switch() replace Activities variable codes with connected activities labels
 *   please double-check that your Activity variable is an _atomic_ variable
-4. Appropriately labels the data set with descriptive variable names:
+
+4.Appropriately labels the data set with descriptive variable names:
+
 *   this step was done in Step 1-3 so just take some break for double-check using names() or head()
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject:
+
+5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject:
+
 *   using melt() and dcast() functions we receive new data average which is grouped by subject, by activity 
 *   use write.table() with argument row.name=FALSE to save this data as .txt file
 
